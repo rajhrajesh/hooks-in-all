@@ -1,6 +1,8 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
 import Ladoos from "./components/Ladoo";
+import Ben10 from "./components/Ben10";
+import Hemanh from "./components/Hemanh";
 
 
 export const UserContext = createContext();
@@ -22,8 +24,9 @@ const App = () => {
         <h1>UseContext in a new Way {value}</h1><br/>
         <button onClick={changethe}>Change The Button</button>
         <button onClick={original}>Original The Button</button>
-        <p>Nice to meet you</p>
         <Ladoos/>
+        <Ben10 />
+        <Hemanh/>
       </div>
 
     </UserContext.Provider>
